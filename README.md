@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wanderlust Explorer
 
-## Getting Started
+Wanderlust Explorer is a Next.js travel discovery app built with TypeScript, Tailwind CSS, and the App Router. It includes a local dataset of 100 curated experiences, URL-synced search and filters, and shared favorites flow across the app.
 
-First, run the development server:
+## Features
+
+- Home page with a hero section and CTA into the explorer
+- Explorer page with regex title search, category filtering, destination filtering, and shareable URLs
+- Dynamic experience detail pages
+- Favorites and profile pages backed by shared React state
+- A local dataset of exactly 100 typed experiences
+
+## Design References
+
+- Airbnb Experiences: https://www.airbnb.com/experiences
+- National Geographic Travel: https://www.nationalgeographic.com/travel
+- GetYourGuide: https://www.getyourguide.com/
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quality Checks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+npm run build
+```
